@@ -4,19 +4,19 @@
        <style>
             #titlebar{
                 width:100%;
-                height:80px;
+                height:auto;
                 display:flex;
                 justify-content: space-between;
                 box-shadow: 0px 10px 10px rgb(224, 224, 224);
             }
             #titlebar>div:nth-child(1){
-                background-color: aqua;
-                height:100%;
-                width:15%;
+                background-image: linear-gradient(to bottom right,rgb(0, 128, 255), rgb(255, 0, 221));
+                height:70px;
+                width:180px;
                 margin-left: 30px;
             }
-            #titlebar>div:nth-child(1)>p{
-                font-size: 30px;
+            #titlebar>div:nth-child(1)>h1{
+                font-size: auto;
                 font-weight: bold;
                 text-align: center;
             }
@@ -26,15 +26,14 @@
                 margin-right: 30px;
             }
             #titlebar>div:nth-child(2)>button{
-                height:80%;
-                width:16.15%;
+                height:70px;
+                width:115px;
                 background-color: white;
                 border-color: transparent;
-                box-shadow: 0px 10px 10px rgb(224, 224, 224);
             }
             #titlebar>div:nth-child(2)>button>p{
                 font-weight: bold;
-                font-size: 20px;
+                font-size: auto;
             }
 
             
@@ -42,20 +41,22 @@
                 width:100%;
                 height:auto;
                 display: flex;
+                flex-wrap: wrap;
             }
             #Body>div{
                 height:auto;
                 width:50%;
                 padding-top:50px;
+                
             }
             #Body>div>div{
-                width:350px;
+                width:400px;
                 display:flex;
                 justify-content: space-between;
             }
             #Body>div>div>img{
                 height:100px;
-                width:100px;
+                width:200px;
             }
             #Body>div:nth-child(1){
                 margin-right: 70px;
@@ -77,20 +78,25 @@
                 font-weight:bold;
                 color: rgb(63, 108, 255);
             }
+            #Body>div:nth-child(2){
+                flex-wrap: wrap; 
+            }
             #Body>div:nth-child(2)>div{
                 width:auto;
                 height:auto;
+                margin-top: 15px;
                 display: flex;
+                flex-wrap: wrap;
             }
             #Body>div:nth-child(2)>div>div{
-                width:40%;
-                height:100%;
+                width:290px;
+                height:auto;
                 padding:30px;
                 box-shadow: 0px 10px 10px rgb(224, 224, 224);
             }
             #Body>div:nth-child(2)>div>div>img{
-                width:50%;
-                height:50%;
+                width:150px;
+                height:150px;
                 border-radius: 50%;
             }
        </style>
@@ -98,7 +104,7 @@
     <body>
        <div id="titlebar">
             <div>
-                <p>StudyLab</p>
+                <h1>StudyLab</h1>
             </div>
             <div>
                 <button>
